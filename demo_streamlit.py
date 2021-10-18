@@ -12,7 +12,7 @@ st.text("")
 st.text("")
 
 s=0
-filename = st.text_input('Enter a file path:')
+filename = st.text_input('Enter a file path of the invoice pdf :')
 name = filename.split('\\')
 name = name[len(name)-1]
 
