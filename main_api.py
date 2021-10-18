@@ -40,6 +40,8 @@ def convert(file : str):
     print("number of lines : ",len(all_str))
     print(all_str)
 
+    all_str = all_str.replace(',','')
+
     temp = re.findall(r"[-+]?\d*\.\d+|\d+", all_str)
     print (temp)
 

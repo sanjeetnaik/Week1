@@ -7,7 +7,9 @@ import re
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Users\sanje\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
 # Simple image to string
-all_str = pytesseract.image_to_string(Image.open(r'example.pdf_dir\\0_example.pdf.jpg'))
+all_str = pytesseract.image_to_string(Image.open(r'example1.pdf_dir\\0_example1.pdf.jpg'))
+
+all_str = all_str.replace(',','')
 
 print("number of lines : ",len(all_str))
 print(all_str)
